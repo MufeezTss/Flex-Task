@@ -1,0 +1,128 @@
+/* Section-1 */
+#main{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-flow: row wrap;
+}
+#main div{
+    flex-grow: 5;
+}
+#main div:nth-of-type(1) {
+    margin: 10px;
+    font-size: 50px;
+}
+#main div:nth-of-type(2){
+     text-align: center;
+     color: black;
+}
+#main div:nth-of-type(2) p{
+    text-align: center;
+    color: blue;
+    line-height: 0;
+    font-family: cursive;
+}
+#main div:nth-of-type(3) {
+    margin: 10px;
+    font-size: 50px;
+    text-align: end;  
+}
+
+/* Section-2 */
+
+#search-box{
+    display: flex;
+}
+#search-box input{
+    flex-grow: 8;
+    flex-shrink: 0;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+/* Section-3 */
+
+#dropdown{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+#dropdown div{
+    flex-grow: 10;
+}
+#dropdown div:nth-of-type(1) {
+    flex-grow: 8;
+    flex-shrink: 0;
+    padding: 20px;
+}
+#dropdown div:nth-of-type(1) select {
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: black;
+    color: aliceblue;
+    box-shadow: 5px;
+}
+#dropdown div:nth-of-type(2) {
+    flex-grow: 6;
+    flex-shrink: 0;
+    padding: 20px;
+}
+#dropdown div:nth-of-type(2) select {
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(245, 241, 241);
+    color: rgb(162, 169, 175);
+}
+
+/* Section-4 */
+
+#list-items{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#list{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 2px 2px;
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    flex-flow: row wrap;
+}
+#list div img{
+    margin: 7px;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    flex-grow: 4;
+}
+#list-part-1{
+    flex-flow: column wrap;
+    flex-grow: 7;
+}
+#list-part-1 h4{
+    color: rgb(137, 137, 204) ;
+    font-size: 20px;
+    line-height: 0;
+}
+#list-part-1 p{
+    color: rgb(137, 137, 204) ;
+    line-height: 0;
+}
+#list-part-2{
+    flex-grow: 1;
+    text-align: right;
+}
+#list-part-2 p{
+    margin: 5px;
+    line-height: 0;
+    font-size: 50px;
+}
+#list-part-2 h4{
+    margin: 8px;
+    font-size: 20px;
+    color: rgb(54, 54, 161);
+}
